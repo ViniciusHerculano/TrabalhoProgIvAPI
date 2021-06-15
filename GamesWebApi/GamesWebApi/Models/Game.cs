@@ -21,6 +21,10 @@ namespace GamesWebApi.Models
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [MaxLength(100, ErrorMessage = "O campo {0} deve conter no máximo 100 caracteres")]
+        public string Plataforma { get; set; }
+
+        [Required(ErrorMessage = "O campo {0} é obrigatório")]
+        [MaxLength(100, ErrorMessage = "O campo {0} deve conter no máximo 100 caracteres")]
         public string  Categoria { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
