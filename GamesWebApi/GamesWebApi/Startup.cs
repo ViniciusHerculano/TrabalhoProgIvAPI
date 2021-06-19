@@ -30,7 +30,13 @@ namespace GamesWebApi
         {
             services.AddDbContext<GameWebApiContext>(option => option.UseInMemoryDatabase("GameWebApi"));
             services.AddScoped<GameWebApiContext, GameWebApiContext>();
-
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+                });
+            });
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -50,7 +56,7 @@ namespace GamesWebApi
             }
 
             app.UseHttpsRedirection();
-
+            app.UseCors();
             app.UseRouting();
 
             app.UseAuthorization();
