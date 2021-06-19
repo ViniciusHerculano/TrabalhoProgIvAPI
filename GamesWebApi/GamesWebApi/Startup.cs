@@ -54,9 +54,10 @@ namespace GamesWebApi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "GamesWebApi v1"));
             }
+            app.UseCors();
 
             app.UseHttpsRedirection();
-            app.UseCors();
+            
             app.UseRouting();
 
             app.UseAuthorization();

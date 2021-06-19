@@ -1,0 +1,151 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+iframe {
+    overflow-x: hidden;
+    overflow-Y: hidden;
+}
+
+table {
+    text-align-last: center;
+}
+
+td {
+    transition: box-shadow .3s;
+}
+
+td:hover {
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
+    background-color: #ef9a9a;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.conteudo {
+    text-align: center;
+}
+
+.i-conteudo {
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+.nav_logo {
+    height: 100px;
+    width: 100px;
+}
+
+.titulo-promo {
+    font-weight: bold;
+}
+
+.img-promo {
+    margin-top: 25px;
+    height: 80%;
+    width: 100%;
+    transition: box-shadow .3s;
+}
+
+.img-promo:hover {
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
+}
+
+.page-footer {
+    margin-top: 50px;
+}
+
+.img-games {
+    width: 600px;
+    height: 250px;
+}
+
+.card-content {
+    height: 120px;
+}
+
+.game-destaque {
+    margin-top: 50px;
+    text-align: -webkit-center;
+}
+
+.video-destaque {
+    width: 100%;
+    height: 70%;
+    transition: box-shadow .3s;
+}
+
+.video-destaque:hover {
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    transition: box-shadow .3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
+}
+
+.tamanho-col {
+    width: 300px;
+}
+
+input:not([type]):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=url]:not(.browser-default):focus:not([readonly])+label,
+input[type=time]:not(.browser-default):focus:not([readonly])+label,
+input[type=date]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+input[type=number]:not(.browser-default):focus:not([readonly])+label,
+input[type=search]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #b71c1c;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #b71c1c;
+    -webkit-box-shadow: 0 1px 0 0 #b71c1c;
+    box-shadow: 0 1px 0 0 #b71c1c;
+}
+
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid #b71c1c;
+}
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+    font-size: 16px;
+    color: #b71c1c;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}
+
+.input-field .prefix.active {
+    color: #b71c1c;
+}
+
+.sidenav li>a:hover {
+    background-color: #b71c1c;
+}
