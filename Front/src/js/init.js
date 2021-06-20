@@ -1,34 +1,30 @@
-jQuery.namespace = (function ($) {
-    $(function () {
-
-        $('.sidenav').sidenav();
-
-    }); // end of document ready
-})(jQuery); // end of jQuery name space
-
-
-$(document).ready(function () {
-    $('input.autocomplete').autocomplete({
-        data: {
-            "PC": 'https://www.betaarchive.com/wiki/images/9/94/Pc-logo-png.png',
-            "PLAYSTATION 4": 'https://www.logo.wine/a/logo/PlayStation/PlayStation-Icon-Logo.wine.svg',
-            "PLAYSTATION 5": 'https://www.logo.wine/a/logo/PlayStation/PlayStation-Icon-Logo.wine.svg',
-            "XBOX ONE": 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Xbox_one_logo.svg/1024px-Xbox_one_logo.svg.png',
-            "XBOX ONE SERIES": 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Xbox_one_logo.svg/1024px-Xbox_one_logo.svg.png'
-        },
-    });
+$(document).ready(function() {
+    $('.sidenav').sidenav();
 });
 
-
-$(document).ready(function () {
+$(document).ready(function() {
     $('.materialboxed').materialbox();
 });
 
-
-$(document).ready(function () {
+$(document).ready(function() {
     $('.slider').slider();
 });
 
-$(document).ready(function () {
+$(document).ready(function() {
     $('.collapsible').collapsible();
+});
+
+$(document).ready(function() {
+    $('input#input_text, textarea#textarea2').characterCounter();
+});
+
+$(document).ready(function() {
+    $('.fixed-action-btn').openFAB();
+    $('.fixed-action-btn').closeFAB();
+    $('.fixed-action-btn.toolbar').openToolbar();
+    $('.fixed-action-btn.toolbar').closeToolbar();
+});
+
+$(document).ready(function() {
+    $('.tooltipped').tooltip();
 });

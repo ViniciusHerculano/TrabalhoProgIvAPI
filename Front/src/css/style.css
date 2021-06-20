@@ -7,6 +7,10 @@ iframe {
     overflow-Y: hidden;
 }
 
+.container {
+    width: 90%;
+}
+
 table {
     text-align-last: center;
 }
@@ -33,6 +37,7 @@ td:hover {
     margin-top: 50px;
     height: 100%;
     width: 100%;
+    border-radius: 10px;
 }
 
 .nav_logo {
@@ -149,3 +154,38 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .sidenav li>a:hover {
     background-color: #b71c1c;
 }
+
+.collapsible li.disabled .collapsible-body {
+    display: none !important;
+    /*or using id of the app to avoid the use of !important*/
+}
+
+.collapsible li.disabled .collapsible-header {
+    background: rgb(221, 221, 221);
+}
+
+textarea.materialize-textarea.invalid+label:after,
+textarea.materialize-textarea:focus.invalid+label:after,
+.select-wrapper.invalid+label:after {
+    margin-top: 0.6rem;
+    font-size: 12px;
+}
+
+textarea.materialize-textarea.valid+label:after,
+textarea.materialize-textarea:focus.valid+label:after,
+.select-wrapper.valid+label:after {
+    margin-top: 0.6rem;
+    font-size: 12px;
+}
+
+textarea.materialize-textarea.validate+label:not(.label-icon).active {
+    font-size: 12px;
+}
+
+
+/*
+.backdrop {
+    background-color: #b71c1c;
+    color: white;
+}
+*/

@@ -8,77 +8,114 @@
     <title>CADASTRO DE GAMES - LEVEL BUG</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
+
     <link rel="stylesheet" href="src/css/style.css">
+
+    <!-- Kaspersky labs -->
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Ds2ibU4TrA1Y4tK3L6J6OqpxMP3J9kC7MF_9_EkTDXyJiCl0DggEwEpqu8mnbSHFJkFvlVYNwKqD6YmyKj5HveSwgRae4MAgGN8wcj-T_8UgDcSUU_maxFEx9-ovXujyV4pa-8I4_pToT_d5wUPCdo6s_YRmJfZQBNBitKh8BgA"
+        charset="UTF-8"></script>
+
 </head>
-
-
-<!-- -->
 
 <body class="blue-grey darken-4">
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
-            <h2 class="titulo-promo header center white-text
-    ">CADASTRO DE NOVOS GAMES</h2>
+            <h1 class="titulo-promo header center white-text
+    ">CADASTRO</h1>
             <div class="row center">
                 <h4 class="header col s12 light white-text"></h4>
 
             </div>
         </div>
     </div>
-    <div class="container">
-        <form class="col s12">
-            <div class="row">
-                <div class="input-field col s12 m6 l6">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input id="nome" type="text" class="validate">
-                    <label for="nome">Nome</label>
-                </div>
-                <div class="input-field col s12 m6 l6">
-                    <i class="material-icons prefix">format_list_bulleted</i>
-                    <input id="categoria" type="text" class="validate">
-                    <label for="categoria">Categoria</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12 m9 l9">
-                    <i class="material-icons prefix">videogame_asset</i>
-                    <input type="text" id="plataforma" class="validate">
-                    <label for="plataforma">Plataforma</label>
-                </div>
-                <div class="input-field col s12 m3 l3">
-                    <i class="material-icons prefix">attach_money</i>
-                    <input id="preco" type="number" class="validate">
-                    <label for="preco">Preço (R$)</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12 l12 l12">
-                    <i class="material-icons prefix">edit</i>
-                    <textarea id="descricao" class="materialize-textarea"></textarea>
-                    <label for="descricao">Descrição</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12">
-                    <div class="input-field inline">
-                        <a id="btn-validar" class="blue darken-1 waves-effect waves-light btn-large"><i
-                                class="material-icons left">check</i>VALIDAR</a>
-                        <a id="btn-enviar" class="green darken-1 waves-effect waves-light btn-large"><i
-                                class="material-icons left">send</i>ENVIAR</a>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <div class="conteudo">
+                <ul class="collapsible">
+                    <li class="active">
+                        <div class="red darken-4 collapsible-header white-text active"><i class="material-icons">games</i>Games</div>
+                        <div class="collapsible-body white">
+                            <div class="row">
+                                <form id="cadastro-games" class="col s12 precisa-validar" novalidate>
+                                    <div class="row">
+                                        <div class="input-field col s12 m6 l6">
+                                            <i class="material-icons prefix">account_circle</i>
+                                            <input id="nome" nama="nome" type="text" class="validate" required pattern="^[^-\s][a-zA-ZÀ-ú0-9 ]*" required minlength="2" maxlength="100" data-length="100">
+                                            <label for="nome" data-error="Ops! &#128533; Deu ruim, por favor preencha o campo Nome corretamente
+                                            " data-success="Heheê! Esse game é brabo! 	
+                                            &#128079;" class="active">Nome</label>
+                                        </div>
+                                        <div class="input-field col s12 m6 l6">
+                                            <i class="material-icons prefix">format_list_bulleted</i>
+                                            <input id="categoria" type="text" class="validate" required pattern="^[^-\s][a-zA-ZÀ-ú0-9 ]*" required minlength="2" maxlength="50" data-length="50">
+                                            <label for="categoria" data-error="Hmm &#128533;... Por favor, descreva melhor a Categoria do jogo" data-success="Top! Quem não curte esse estilo de game? &#128525;" class="active">Categoria</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12 m8 l8">
+                                            <i class="material-icons prefix">videogame_asset</i>
+                                            <input type="text" id="plataforma" class="validate" required pattern="^[^-\s][a-zA-ZÀ-ú0-9 ]*" required minlength="2" maxlength="50" data-length="50">
+                                            <label for="plataforma" data-error="Eita! Nunca nem vi &#129300; Por favor, preencha corretamente o campo Plataforma" data-success="Boa! Mais um pra lista &#129321;" class="active">Plataforma</label>
+                                        </div>
+                                        <div class="input-field col s12 m4 l4">
+                                            <i class="material-icons prefix">attach_money</i>
+                                            <input id="preco" type="number" class="validate" required minlength="0">
+                                            <label for="preco" data-error="Opa! o Campo tá vazio &#128533; Para deixar o game GRÁTIS, preencha o campo Preço (R$) com 0 (zero)" data-success="Perfect! Melhor preço do mercado hein &#129321;" class="active">Preço (R$)</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12 l12 l12">
+                                            <i class="material-icons prefix">edit</i>
+                                            <textarea id="descricao" class="materialize-textarea validate" required minlength="15" maxlength="50" data-length="50"></textarea>
+                                            <label for="descricao" data-error="Hmm &#128533;... É necessário que a Descrição tenha 15 ou mais caracteres com limite até 50" data-success="Show! Bela descrição &#128079;" class="active">Descrição</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <div class="input-field inline">
+                                                <a id="btn-validar" class="blue darken-1 waves-effect waves-light btn-large tooltipped" data-position="bottom" data-delay="50" data-tooltip="&#x26A0;&#xFE0F; Preecha os campos e valide-os antes de cadastrar!"><i class="material-icons left">done</i>VALIDAR</a>
+                                                <a id="btn-enviar" class="green darken-1 waves-effect waves-light btn-large tooltipped" data-position="bottom" data-delay="50" data-tooltip="&#9989; Tudo certo! Autorizado para cadastro" disabled><i class="material-icons left">send</i>ENVIAR</a>
+                                                <a id="btn-consultar" class="red darken-4 waves-effect waves-light btn-large tooltipped" data-position="bottom" href="tabelas.html" data-delay="50" data-tooltip="&#x1F50D; Clique aqui para consultar os games cadastrados!"><i class="material-icons left">search</i>CONSULTAR</a>
 
-                    </div>
-                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="disabled">
+                        <div class="red darken-4 collapsible-header white-text" onclick="Materialize.toast('&#x26D4; Cadastro de Consoles e PCs indisponível no momento', 4000, 'rounded')"><i class="material-icons">sports_esports</i>Consoles e PCs (Indisponível)
+                        </div>
+                        <div class="collapsible-body"><span>Indisponível</span></div>
+                    </li>
+                    <li class="disabled">
+                        <div class="red darken-4 collapsible-header white-text" onclick="Materialize.toast('&#x26D4; Cadastro de Colecionáveis indisponível no momento', 4000, 'rounded')"><i class="material-icons">catching_pokemon</i>Colecionáveis (Indisponível)</div>
+                        <div class="collapsible-body"><span>Indisponível</span></div>
+                    </li>
+                    <li class="disabled">
+                        <div class="red darken-4 collapsible-header white-text" onclick="Materialize.toast('&#x26D4; Cadastro de Outros Produtos indisponível no momento', 4000, 'rounded')"><i class="material-icons">local_cafe</i>Outros Produtos (Indisponível)</div>
+                        <div class="collapsible-body"><span>Indisponível</span></div>
+                    </li>
+                </ul>
+
             </div>
-        </form>
+        </div>
     </div>
+
 
     </div>
     </div>
     </div>
 
-    <script src="src/js/materialize.js"></script>
-    <script src="src/js/jquery-3.5.1.min.js"></script>
+    <script src="src/js/init.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+    <!--<script src="src/js/jquery-3.5.1.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
     <script src="src/js/cadastro.js"></script>
 
 

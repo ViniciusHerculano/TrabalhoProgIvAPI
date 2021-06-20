@@ -1,0 +1,13 @@
+API
+
+[{"id":1,"nome":"Marvels SpiderMan Miles Morales","descricao":"Mussum Ipsum, cacilds vidis litro abertis.","plataforma":"PLAYSTATION 5","categoria":"Aventura","preco":149},{"id":2,"nome":"Red Dead Redemption 2","descricao":"Mussum Ipsum, cacilds vidis litro abertis.","plataforma":"XBOX ONE SERIES","categoria":"Mundo Aberto","preco":249},{"id":3,"nome":"Resident Evil Village","descricao":"Mussum Ipsum, cacilds vidis litro abertis.","plataforma":"PLAYSTATION 5","categoria":"Terror","preco":149},{"id":4,"nome":"Call of Duty Black Ops Cold War","descricao":"Mussum Ipsum, cacilds vidis litro abertis.","plataforma":"XBOX ONE","categoria":"FPS","preco":79},{"id":5,"nome":"God of War","descricao":"Mussum Ipsum, cacilds vidis litro abertis.","plataforma":"PLAYSTATION 4","categoria":"Aventura","preco":25},{"id":6,"nome":"Immortal Fenyx Rising","descricao":"Mussum Ipsum, cacilds vidis litro abertis.","plataforma":"XBOX ONE","categoria":"RPG Mundo Aberto","preco":99},{"id":7,"nome":"Mortal Kombat 11","descricao":"Mussum Ipsum, cacilds vidis litro abertis.","plataforma":"PLAYSTATION 4","categoria":"Luta","preco":170}]
+
+MANUAL
+
+Marvels SpiderMan Miles Morales	Mussum Ipsum, cacilds vidis litro abertis.	PLAYSTATION 5	Aventura	R$ 149
+Red Dead Redemption 2	Mussum Ipsum, cacilds vidis litro abertis.	XBOX ONE SERIES	Mundo Aberto	R$ 249
+Resident Evil Village	Mussum Ipsum, cacilds vidis litro abertis.	PLAYSTATION 5	Terror	R$ 149
+Call of Duty Black Ops Cold War	Mussum Ipsum, cacilds vidis litro abertis.	XBOX ONE	FPS	R$ 79
+God of War	Mussum Ipsum, cacilds vidis litro abertis.	PLAYSTATION 4	Aventura	R$ 25
+Immortal Fenyx Rising	Mussum Ipsum, cacilds vidis litro abertis.	XBOX ONE	RPG Mundo Aberto	R$ 99
+Mortal Kombat 11	Mussum Ipsum, cacilds vidis litro abertis.	PLAYSTATION 4	Luta	R$ 170
